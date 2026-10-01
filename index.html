@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ORACULO</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+  <div id="pagina-inicial" class="pagina">
+
+    <button class="titulo-oraculo">
+      ORACULO
+    </button>
+
+  </div>
+
+
+  <div id="pagina-oraculo" class="pagina escondida">
+
+    <div class="botoes">
+
+      <button id="botao-igual">X=Y</button>
+
+      <button id="botao-diferente">X≠Y</button>
+
+    </div>
+
+  </div>
+
+
+  <!-- X=Y — DADO -->
+
+  <div id="pagina-dado" class="pagina escondida">
+
+    <div class="conteudo-dado">
+
+      <div id="instrucao-dado">
+        role o dado e descubra a variável
+      </div>
+
+      <div id="dado" class="dado-escondido">
+        ⚀
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- X≠Y — DESENHO -->
+
+  <div id="pagina-desenho" class="pagina escondida">
+
+    <div class="caixa-desenho">
+
+      <div class="titulo-desenho">
+        DESENHE O SEU Y
+      </div>
+
+      <canvas id="canvas-desenho"></canvas>
+
+    </div>
+
+  </div>
+
+
+  <!-- ORÁCULO FINAL -->
+
+  <div id="pagina-oraculo-final" class="pagina escondida">
+
+    <div class="oraculo-mensagem">
+
+      <div id="carregamento">
+
+        <div class="texto-carregamento">
+          recebendo informações celestiais...
+        </div>
+
+        <div class="barra">
+
+          <div id="barra-progresso"></div>
+
+        </div>
+
+      </div>
+
+      <div id="frase-oraculo"></div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
