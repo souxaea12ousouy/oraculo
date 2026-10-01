@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: "Courier New", monospace;
+}
+
+.pagina {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.escondida {
+  display: none;
+}
+
+.titulo-oraculo {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Courier New", monospace;
+  font-size: 120px;
+  font-weight: normal;
+  letter-spacing: 8px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.titulo-oraculo:hover {
+  text-decoration: underline;
+}
+
+.botoes {
+  display: flex;
+  gap: 30px;
+}
+
+.botoes button {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 30px;
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background: white;
+  color: black;
+}
+
+.conteudo-dado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#instrucao-dado {
+  font-size: 20px;
+  text-align: center;
+}
+
+#dado {
+  font-size: 150px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s;
+}
+
+#dado:hover {
+  transform: scale(1.05);
+}
+
+#dado.dado-escondido {
+  display: none;
+}
+
+#dado.rolando {
+  transform: scale(1.05);
+}
+
+#pagina-desenho {
+  background: black;
+}
+
+.caixa-desenho {
+  width: 700px;
+  height: 500px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+.titulo-desenho {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background: white;
+  color: black;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+}
+
+#canvas-desenho {
+  flex: 1;
+  background: white;
+  cursor: crosshair;
+}
+
+#pagina-oraculo-final {
+  background: black;
+  color: white;
+}
+
+.oraculo-mensagem {
+  width: 700px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+}
+
+.texto-carregamento {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.barra {
+  width: 500px;
+  height: 20px;
+  border: 1px solid white;
+  margin: 0 auto;
+}
+
+#barra-progresso {
+  width: 0%;
+  height: 100%;
+  background: white;
+}
+
+#frase-oraculo {
+  font-size: 22px;
+  line-height: 1.5;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
